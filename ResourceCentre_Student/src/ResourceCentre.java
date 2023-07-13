@@ -7,7 +7,7 @@ public class ResourceCentre {
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
 		ArrayList<Chromebook> chromebookList = new ArrayList<Chromebook>();
 
-		camcorderList.add(new Camcorder("CC0012", "Sony HDR-CX405", 35));
+		camcorderList.add(new Camcorder("CC001", "Sony HDR-CX405", 35));
 		camcorderList.add(new Camcorder("CC002", "Panasonic HC-MDH2", 10));
 		chromebookList.add(new Chromebook("CB001", "ASUS Chromebook ", "Win 10"));
 		chromebookList.add(new Chromebook("CB002", "HP Chromebook", "Win 10"));
@@ -185,6 +185,9 @@ public class ResourceCentre {
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
 		// write your code here
+		String tag=Helper.readString("Enter asset tag > ");
+		String description =Helper.readString("Enter description > ");
+		String os=Helper.readString("Enter os > ");
 
 		return cb;
 		
