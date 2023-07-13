@@ -164,8 +164,8 @@ for (int i = 0; i < camcorderList.size(); i++) {
   }
   public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
     ResourceCentre.setHeader("CHROMEBOOK LIST");
-    String output = String.format("%-10s %-30s %-10s\n", "ASSET TAG", "DESCRIPTION",
-        "OS");
+    String output = String.format("%-10s %-30s %-22s%-10s\n", "ASSET TAG", "DESCRIPTION",
+        "Availablility","OS");
     output += retrieveAllChromebook(chromebookList);
     System.out.println(output);
   }
