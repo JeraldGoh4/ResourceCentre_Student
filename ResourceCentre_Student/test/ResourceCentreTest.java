@@ -40,7 +40,7 @@ public class ResourceCentreTest {
   @Test
   public void testAddCamcorder() {
     // Item list is not null and it is empty
-    assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
+    assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);//
     assertEquals("Test that the Camcorder arraylist is empty.", 0, camcorderList.size());
     // Given an empty list, after adding 1 item, the size of the list is 1
     ResourceCentre.addCamcorder(camcorderList, cc1);
